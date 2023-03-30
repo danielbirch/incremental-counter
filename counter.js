@@ -12,11 +12,20 @@ plus.addEventListener('click', increment);
 doReset.addEventListener('click', reset);
 doSave.addEventListener('click', save);
 doload.addEventListener('click', load);
+window.addEventListener('load', setKeys);
 
 // FUNCTIONS
 // Set initial value
 let currentCount = 0;
 let storedCount = 0;
+// On page load, store empty values for currentCount and storedCount
+function setKeys() {
+  if (document.readyState === 'complete') {
+    console.log('hey');
+    localStorage.setItem('currentCount', currentCount);
+    localStorage.setItem('storedCount', storedCount);
+  }
+}
 // Reduce current count by 1 when decrement button is clicked
 function decrement() {
   currentCount--;
