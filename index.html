@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/style.css">
+  <title>Incremental Counter</title>
+</head>
+<body>
+
+  <div class="counter-container">
+    <div class="counter-inner-container">
+      <div class="inner-header">
+        <h1>Incremental Counter</h1>
+      </div>
+      <div class="inner-counter">
+        <div id="current-count">0</div>
+      </div>
+      <div class="inner-buttons">
+        <div class="minus-plus">
+          <button id="decrement">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button id="increment">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="reset-save">
+          <button id="reset">Reset</button>
+          <button id="save">Save</button>
+        </div>
+        <div class="load-saved">
+          <button id="load-count">Load</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/counter.js"></script>
+</body>
+</html>
